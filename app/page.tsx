@@ -221,7 +221,7 @@ export default function Home() {
   useEffect(() => {
     const t = setTimeout(() => setHeroVisible(true), 80);
 
-    fetch("http://localhost:5000/colleges")
+    fetch("https://college-discovery-faii.onrender.com/colleges")
       .then((res) => res.json())
       .then((data) => {
         setColleges(data);
