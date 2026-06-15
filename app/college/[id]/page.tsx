@@ -13,7 +13,7 @@ export default function CollegeDetail() {
     if (!params?.id) return;
 
     axios
-      .get(`https://college-discovery-1.onrender.com/colleges/${params.id}`)
+      .get(`https://college-discovery-faii.onrender.com/colleges/${params.id}`)
       .then((res) => setCollege(res.data))
       .catch((err) => console.log(err));
   }, [params]);
